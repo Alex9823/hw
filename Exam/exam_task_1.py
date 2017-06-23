@@ -12,7 +12,7 @@ def open():
                 for text in texts: 
                     if '/se' in text: 
                         sentences = sentences + 1 
-                        names[f] = se_num 
+                        names[f] = sentences 
                         main(names) 
 def main(dict): 
     new = "" 
