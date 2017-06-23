@@ -6,8 +6,8 @@ def open():
     tree = os.walk('news') 
     for root, dirs, files in os.walk('news'): 
         for f in files: 
-            with open(os.path.join(root,f), 'r') as f0: 
-                texts = f0.readlines() 
+            with open(os.path.join(root,f), 'r') as x: 
+                texts = x.readlines() 
                 sentences = 0 
                 for text in texts: 
                     if '/se' in text: 
